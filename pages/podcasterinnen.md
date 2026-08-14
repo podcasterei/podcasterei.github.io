@@ -31,4 +31,4 @@ Wenn Du in dieses Podcaster:innen-Verzeichnis aufgenommen werden willst, schreib
 Das gleiche gilt auch, wenn Du bereits im Verzeichnis bist, aber andere Daten hinterlegt haben willst.
 
 Solltest Du mit Git und Github vertraut sein, kannst Du auch einen Pull Request machen, deine Seite
-findest Du [hier](https://github.com/podcasterei/website-quellcode/tree/master/_people)
+findest Du [hier](https://github.com/podcasterei/podcasterei.github.io/tree/main/_people)

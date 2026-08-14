@@ -34,7 +34,10 @@ jobs:
       - name: Build site
         env:
           JEKYLL_ENV: production
-        run: bundle exec jekyll build --baseurl "${{ steps.pages.outputs.base_path }}"
+        # podcasterei.github.io is QA only, not production - _config.qa.yml overrides url to
+        # match, layered on top of the base _config.yml (which stays pointed at
+        # www.podcasterei.at, the real production domain deployed elsewhere).
+        run: bundle exec jekyll build --config _config.yml,_config.qa.yml --baseurl "${{ steps.pages.outputs.base_path }}"
 
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
