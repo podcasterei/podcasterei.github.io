@@ -47,8 +47,8 @@ Mag Stefan Haslinger<br/>
 Vorgartenstrasse 145/2/3<br/>
 1020 Wien, Austria<br/>
 
-{% icon fa-phone %} +43 680 213 3030
+{% icon la-phone %} +43 680 213 3030
 
-[{% icon fa-envelope %} stefan@podcasterei.at](mailto://stefan@podcasterei.at)
+[{% icon la-envelope %} stefan@podcasterei.at](mailto://stefan@podcasterei.at)
 
 <br/>

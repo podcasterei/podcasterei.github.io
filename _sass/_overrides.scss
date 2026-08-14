@@ -1,0 +1,40 @@
+// Site file of the same name shadows jekyll-bulma's own _sass/_overrides.scss entirely (whole-file
+// precedence, not merged), so anything the theme's default sets there needs to be repeated here too.
+
+// Keep the Ubuntu webfont (bundled by jekyll-bulma at assets/css/ubuntu.css, assets/fonts/ubuntu/)
+// as the site's body font, same as the old Bootstrap/Bootflat build used.
+:root {
+  --bulma-body-family: Ubuntu, Helvetica, Arial, sans-serif;
+}
+
+// Brand color sampled from img/logo.jpeg's orange splash, matching the accent already used
+// elsewhere on the site (the Podlove subscribe-button data-colors on _layouts/person.html).
+.navbar {
+  --bulma-navbar-background-color: #FC6E51;
+  --bulma-navbar-h: 10deg;
+  --bulma-navbar-s: 95%;
+  --bulma-navbar-l: 65%;
+
+  // Without this, Bulma still colors the *currently active* nav item (a.navbar-item.is-active)
+  // from its own global --bulma-link-h/-s/-l default (a blue unrelated to the values above) instead
+  // of from this navbar's own hue/saturation/lightness - these four properties are what it actually
+  // reads for that state, so they need to be pointed at our own values too.
+  --bulma-navbar-item-selected-h: var(--bulma-navbar-h);
+  --bulma-navbar-item-selected-s: var(--bulma-navbar-s);
+  --bulma-navbar-item-selected-l: var(--bulma-navbar-l);
+  --bulma-navbar-item-selected-background-l: 40%;
+  --bulma-navbar-item-selected-color-l: 97%;
+}
+
+// The resting nav items' text color is Bulma's own --bulma-text-l, which is intentionally light
+// in dark mode (for contrast against the page's now-dark background) - but our navbar's own
+// background above is a literal color, so it doesn't darken with the rest of the page. Without
+// this, dark mode ends up with near-white text on a background that's still light-mode orange,
+// unreadable. Darkening the same hue/saturation here keeps the brand color recognizable while
+// giving Bulma's light dark-mode text something dark enough to actually contrast against.
+@media (prefers-color-scheme: dark) {
+  .navbar {
+    --bulma-navbar-background-color: #7A2E1B;
+    --bulma-navbar-l: 28%;
+  }
+}

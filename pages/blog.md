@@ -8,9 +8,9 @@ permalink: blog/
 
   <p class="rss-subscribe">als RSS-Feed <a href="{{ "/feed.xml" | prepend: site.baseurl }}"> abbonieren</a></p>
   <br/>
-  <ul class="list-group">
+  <ul>
     {% for post in site.posts %}
-      <li class="list-group-item">
+      <li>
         <a class="post-link"
 	   href="{{ post.url | prepend: site.baseurl }}">
           {{ post.title }}

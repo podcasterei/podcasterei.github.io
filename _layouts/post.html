@@ -8,7 +8,7 @@ layout: default
 
     {% if page.author %}
       <p>
-        <i class="fa fa-user"></i> &nbsp;
+        <i class="las la-user"></i> &nbsp;
         <span itemprop="author" itemscope itemtype="http://schema.org/Person">
           <span itemprop="name">{{ page.author }}</span>
         </span>
@@ -16,7 +16,7 @@ layout: default
     {% endif %}
 
     <p class="post-meta">
-      <i class="fa fa-calendar"></i> &nbsp;
+      <i class="las la-calendar"></i> &nbsp;
       <time datetime="{{ page.date | date_to_xmlschema }}" itemprop="datePublished">
         {% assign m = page.date | date: "%-m" %}
         {{ page.date | date: "%-d" }}.
@@ -44,6 +44,6 @@ layout: default
   </div>
 
   <br/><br/>
-  <i class="fa fa-arrow-left"></i> Zurück zum <a href="{{ site.url }}/blog">Blog</a>
+  <i class="las la-arrow-left"></i> Zurück zum <a href="{{ site.url }}/blog">Blog</a>
   <br/><br/>
 </article>

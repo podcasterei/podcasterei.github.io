@@ -7,6 +7,7 @@ url: 'https://www.podcasterei.at'
 twitter_username: podcasterei
 github_username: podcasterei
 markdown: kramdown
+theme: jekyll-bulma
 monthly_archive:
   path: archiv
 collections:

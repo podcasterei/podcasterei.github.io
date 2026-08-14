@@ -9,8 +9,8 @@ permalink: ressourcen/
 Diese Liste beinhaltet keine expliziten Empfehlungen, wir sammeln hier alles, was uns interessant
 vorgekommen ist.
 
-<div class="row" markdown="1">
-<div class="col-md-6" markdown="1">
+<div class="columns" markdown="1">
+<div class="column" markdown="1">
 ## Plattformen
 
 * [Audible](https://www.audible.de/)
@@ -33,7 +33,7 @@ vorgekommen ist.
 * [Spotify](https://support.spotify.com/us/using_spotify/features/podcasts/)
 
 </div>
-<div class="col-md-6" markdown="1">
+<div class="column" markdown="1">
 ## Hosting
 
 * [blubrry](https://www.blubrry.com/)
@@ -52,8 +52,8 @@ vorgekommen ist.
 
 </div>
 </div>
-<div class="row" markdown="1">
-<div class="col-md-6" markdown="1">
+<div class="columns" markdown="1">
+<div class="column" markdown="1">
 ## Aufnahme, Bearbeitung und Schnitt
 
 * [Ardour](https://ardour.org/)
@@ -73,7 +73,7 @@ vorgekommen ist.
 * [Was ist ein Podcast?](http://www.ohrenblicke.de/hilfe/was-ist-ein-podcast) bei Ohrenblicke.de
 
 </div>
-<div class="col-md-6" markdown="1">
+<div class="column" markdown="1">
 ## Webseiten mit Creative Commons Musik
 
 Bitte jedenfalls bei jedem einzelnen Musikstück die Lizenz beachten. Auskunft zu Creative Commons

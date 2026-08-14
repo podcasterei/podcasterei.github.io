@@ -9,9 +9,9 @@ permalink: meetups/
   Die Meetups werden auf einer
   <a href="https://www.meetup.com/de-DE/Podcasting-Meetup-Osterreich/">Meetup-Seite</a> organisiert.<br/><br/>
 
-  <ul class="list-group">
+  <ul>
     {% for meetup in site.meetups %}
-      <li class="list-group-item">
+      <li>
         <a class="meetup-link"
      href="{{ meetup.url | prepend: site.baseurl }}">
           {{ meetup.title }}

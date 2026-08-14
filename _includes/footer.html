@@ -1,71 +1,59 @@
 <footer class="footer">
-  <div class="container">
-    <div class="clearfix">
-      <dl class="footer-nav">
-        <dt class="nav-title">Meta</dt>
-        <dd class="nav-item">
-          <a href="{{ site.url }}/impressum">Impressum</a>
-        </dd>
-        <dd class="nav-item">
-          <a href="{{ site.url }}/datenschutz">Datenschutz</a>
-        </dd>
-      </dl>
-
-      <dl class="footer-nav">
-        <dt class="nav-title">Letzte Posts</dt>
-        {% for post in site.posts limit:5 %}
-          <dd class="nav-item">
-	    <a href="{{ post.url | prepend: site.baseurl }}">
-              {{ post.title | truncate: 35 }}
-	    </a>
-	  </dd>
-        {% endfor %}
-      </dl>
-
-      <dl class="footer-nav">
-        <dt class="nav-title">Anmelden & nächstes Meetup</dt>
-        <dd class="nav-item">
-          <i class="fa fa-meetup" aria-hidden="true"></i> <a href="http://www.meetup.com/de-DE/Podcasting-Meetup-Osterreich/">Meetup Gruppe</a>
-        </dd>
-      </dl>
-
-      <dl class="footer-nav">
-        <dt class="nav-title">Kontakt</dt>
-        <dd class="nav-item">
-          <a href="mailto://email">
-            <i class="fa fa-envelope" aria-hidden="true"></i> mail@podcasterei.at
-          </a>
-        </dd>
-        <dd class="nav-item">
-          <a href="https://www.twitter.com/podcasterei">
-            <i class="fa fa-twitter" aria-hidden="true"></i> @podcasterei
-          </a>
-        </dd>
-        <dd class="nav-item">
-          <a href="https://podcasterei.slack.com">
-            <i class="fa fa-slack" aria-hidden="true"></i> Slack Channel
-          </a>
-        </dd>
-      </dl>
+  <div class="columns">
+    <div class="column">
+      <h1 class="title is-size-4">Meta</h1>
+      <ul>
+        <li><a href="{{ site.url }}/impressum">Impressum</a></li>
+        <li><a href="{{ site.url }}/datenschutz">Datenschutz</a></li>
+      </ul>
     </div>
 
-    <div class="footer-copyright text-center">
-      Podcasting Meetup Österreich | &nbsp;
-      <a href="{{ site.url }}">www.podcasterei.at</a>
+    <div class="column">
+      <h1 class="title is-size-4">Letzte Posts</h1>
+      <ul>
+        {% for post in site.posts limit:5 %}
+          <li>
+            <a href="{{ post.url | prepend: site.baseurl }}">
+              {{ post.title | truncate: 35 }}
+            </a>
+          </li>
+        {% endfor %}
+      </ul>
+    </div>
+
+    <div class="column">
+      <h1 class="title is-size-4">Anmelden &amp; nächstes Meetup</h1>
+      <ul>
+        <li>
+          <span class="icon"><i class="lab la-meetup"></i></span>
+          <a href="http://www.meetup.com/de-DE/Podcasting-Meetup-Osterreich/">Meetup Gruppe</a>
+        </li>
+      </ul>
+    </div>
+
+    <div class="column">
+      <h1 class="title is-size-4">Kontakt</h1>
+      <ul>
+        <li>
+          <span class="icon"><i class="las la-envelope"></i></span>
+          <a href="mailto://email">mail@podcasterei.at</a>
+        </li>
+        <li>
+          <span class="icon"><i class="lab la-twitter"></i></span>
+          <a href="https://www.twitter.com/podcasterei">@podcasterei</a>
+        </li>
+        <li>
+          <span class="icon"><i class="lab la-slack"></i></span>
+          <a href="https://podcasterei.slack.com">Slack Channel</a>
+        </li>
+      </ul>
     </div>
   </div>
 
-  <script type='text/javascript' src="{{ site.url }}/js/jquery-2.2.4.min.js"></script>
-  <script type='text/javascript' src="{{ site.url }}/js/bootstrap-3.3.6.min.js"></script>
-  <script type='text/javascript' src="{{ site.url }}/js/icheck-1.0.1.min.js"></script>
-  <script type='text/javascript' src="{{ site.url }}/js/jquery.fs.selecter-3.1.2.min.js"></script>
-  <script type='text/javascript' src="{{ site.url }}/js/jquery.fs.stepper-3.0.7.min.js"></script>
-
-  {% if site.disqus_shortname %}
-    <script>
-      {{ site | disqus_config }}
-    </script>
-  {% endif %}
+  <div class="has-text-centered">
+    Podcasting Meetup Österreich | &nbsp;
+    <a href="{{ site.url }}">www.podcasterei.at</a>
+  </div>
 
   {% if page.custom_js %}
     {% for js_file in page.custom_js %}
