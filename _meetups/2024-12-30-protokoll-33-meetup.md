@@ -21,7 +21,7 @@ Wir haben in kleiner Runde unsere besten Podcast-Momente des Jahres geteilt:
 - **Valentin**: Start von ["Business WTF"](https://www.business-wtf.com/) und neue Folgen von ["Raabe und Kampf"](https://podcasts.apple.com/de/podcast/raabe-kampf/id1462911339)
 - **Katharina**: ["Klenk und Reiter"](https://www.falter.at/podcasts/gerichtsmedizin) über Gerichtsmedizin
 - **Magdalena**: Idee für eigenen Podcast (noch geheim!)
-- **Georg**: [Meetup 32](https://www.podcasterei.at/meetups/2024-11-16-protokoll-32-meetup.html)
+- **Georg**: [Meetup 32]({{ site.url }}/meetups/2024-11-16-protokoll-32-meetup.html)
 - **Thorina**: Erkenntis "Ich könnt selber einen Podcast machen!"
 - **Klebemonster**: Castropod gelöscht, weil Speicher gecrashed
 - **Stefan**: Die Meetups

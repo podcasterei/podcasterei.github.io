@@ -14,4 +14,4 @@ podcasts:
 
 Hallo, ich bin Matthias Bendel und selbständiger Programmierer. Nach intensiver Podcast-Konsumation habe ich im Jahre 2013 beschlossen, selbst einen Podcast zu machen. Dabei ist [IT-Keller](https://it-keller.at) entstanden, der nach einer Pause dank des [Podcasting Meetups Österreich](http://www.meetup.com/de-DE/Podcasting-Meetup-Osterreich/) im Mai 2016 wiederbelebt wurde.
 
-Seit Dezember 2016 darf ich auch mein professionelles Halbwissen zu [Stefans](https://www.podcasterei.at/people/stefan_haslinger.html) Podcast [Aua-Uff-Code!](https://aua-uff-co.de) beisteuern.
+Seit Dezember 2016 darf ich auch mein professionelles Halbwissen zu [Stefans]({{ site.url }}/people/stefan_haslinger.html) Podcast [Aua-Uff-Code!](https://aua-uff-co.de) beisteuern.

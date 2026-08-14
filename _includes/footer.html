@@ -1,58 +1,66 @@
 <footer class="footer">
-  <div class="columns">
-    <div class="column">
-      <h1 class="title is-size-4">Meta</h1>
-      <ul>
-        <li><a href="{{ site.url }}/impressum">Impressum</a></li>
-        <li><a href="{{ site.url }}/datenschutz">Datenschutz</a></li>
-      </ul>
-    </div>
-
-    <div class="column">
-      <h1 class="title is-size-4">Letzte Posts</h1>
-      <ul>
-        {% for post in site.posts limit:5 %}
+  <div class="container">
+    <div class="columns">
+      <div class="column">
+        <h1 class="title">Meta</h1>
+        <ul>
           <li>
-            <a href="{{ post.url | prepend: site.baseurl }}">
-              {{ post.title | truncate: 35 }}
-            </a>
+            <span class="icon"><i class="las la-file-contract"></i></span>
+            <a href="{{ site.url }}/impressum">Impressum</a>
           </li>
-        {% endfor %}
-      </ul>
+          <li>
+            <span class="icon"><i class="las la-shield-alt"></i></span>
+            <a href="{{ site.url }}/datenschutz">Datenschutz</a>
+          </li>
+        </ul>
+      </div>
+
+      <div class="column">
+        <h1 class="title">Letzte Posts</h1>
+        <ul>
+          {% for post in site.posts limit:5 %}
+            <li>
+              <a href="{{ post.url | prepend: site.baseurl }}">
+                {{ post.title | truncate: 35 }}
+              </a>
+            </li>
+          {% endfor %}
+        </ul>
+      </div>
+
+      <div class="column">
+        <h1 class="title">Anmelden &amp; nächstes Meetup</h1>
+        <ul>
+          <li>
+            <span class="icon"><i class="lab la-meetup"></i></span>
+            <a href="http://www.meetup.com/de-DE/Podcasting-Meetup-Osterreich/">Meetup Gruppe</a>
+          </li>
+        </ul>
+      </div>
+
+      <div class="column">
+        <h1 class="title">Kontakt</h1>
+        <ul>
+          <li>
+            <span class="icon"><i class="las la-envelope"></i></span>
+            <a href="mailto://email">mail@podcasterei.at</a>
+          </li>
+          <li>
+            <span class="icon"><i class="lab la-twitter"></i></span>
+            <a href="https://www.twitter.com/podcasterei">@podcasterei</a>
+          </li>
+          <li>
+            <span class="icon"><i class="lab la-slack"></i></span>
+            <a href="https://podcasterei.slack.com">Slack Channel</a>
+          </li>
+        </ul>
+      </div>
     </div>
 
-    <div class="column">
-      <h1 class="title is-size-4">Anmelden &amp; nächstes Meetup</h1>
-      <ul>
-        <li>
-          <span class="icon"><i class="lab la-meetup"></i></span>
-          <a href="http://www.meetup.com/de-DE/Podcasting-Meetup-Osterreich/">Meetup Gruppe</a>
-        </li>
-      </ul>
+    <div class="has-text-centered">
+      Podcasting Meetup Österreich | &nbsp;
+      <a href="{{ site.url }}">www.podcasterei.at</a>
     </div>
-
-    <div class="column">
-      <h1 class="title is-size-4">Kontakt</h1>
-      <ul>
-        <li>
-          <span class="icon"><i class="las la-envelope"></i></span>
-          <a href="mailto://email">mail@podcasterei.at</a>
-        </li>
-        <li>
-          <span class="icon"><i class="lab la-twitter"></i></span>
-          <a href="https://www.twitter.com/podcasterei">@podcasterei</a>
-        </li>
-        <li>
-          <span class="icon"><i class="lab la-slack"></i></span>
-          <a href="https://podcasterei.slack.com">Slack Channel</a>
-        </li>
-      </ul>
-    </div>
-  </div>
-
-  <div class="has-text-centered">
-    Podcasting Meetup Österreich | &nbsp;
-    <a href="{{ site.url }}">www.podcasterei.at</a>
   </div>
 
   {% if page.custom_js %}

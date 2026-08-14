@@ -15,6 +15,11 @@
   --bulma-navbar-s: 95%;
   --bulma-navbar-l: 65%;
 
+  // Bulma caps .navbar-item img at 1.75rem (28px) tall by default, which is what was actually
+  // shrinking the logo down regardless of its height="" attribute - the navbar itself uses
+  // min-height, so it grows to fit a taller logo instead of clipping it.
+  --bulma-navbar-item-img-max-height: 6.125rem;
+
   // Without this, Bulma still colors the *currently active* nav item (a.navbar-item.is-active)
   // from its own global --bulma-link-h/-s/-l default (a blue unrelated to the values above) instead
   // of from this navbar's own hue/saturation/lightness - these four properties are what it actually
@@ -36,5 +41,39 @@
   .navbar {
     --bulma-navbar-background-color: #7A2E1B;
     --bulma-navbar-l: 28%;
+  }
+}
+
+// Match the old Bootstrap/Bootflat site's dark footer band (sampled from the live site at
+// podcasterei.at: slate background, muted blue-grey body/link text, small bold light headings).
+// It was always this dark regardless of light/dark mode on the old site, so no media-query
+// variant here either - the color scheme is fixed, not derived from Bulma's light/dark tokens.
+.footer {
+  --bulma-footer-background-color: #434A54;
+  --bulma-footer-padding: 2.5rem 1.5rem;
+
+  // jekyll-bulma's own footer.scss guards its `color: var(--bulma-footer-color)` line behind a
+  // Sass-time `@if $footer-color` that defaults to false, so the compiled CSS never actually
+  // reads the --bulma-footer-color custom property above - it has to be set as a real color
+  // here instead. This is also why the icons need it: they sit as <a>'s siblings inside <li>,
+  // not inside the <a> itself, so they only ever get their color by inheriting from .footer.
+  color: #AAB2BD;
+
+  .title {
+    color: #E6E9ED;
+    font-size: 0.875rem;
+    margin-bottom: 0.9rem;
+  }
+
+  li {
+    line-height: 2;
+  }
+
+  a {
+    color: #AAB2BD;
+  }
+
+  a:hover {
+    color: #E6E9ED;
   }
 }

@@ -28,7 +28,7 @@ Wir veranstalten seit mittlerweile mehr als zehn Jahren gemeinsam Meetups, fahre
 
 **Das nächste Meetup findet am Donnerstag, 10. September um 18 Uhr als Picknick** statt, genauere Infos folgen.
 
-[Hier kannst du das Protokoll zum vergangenen Treffen am 09.07.2026 nachlesen.](https://www.podcasterei.at/meetups/2026-07-14-protokoll-35-meetup.html)
+[Hier kannst du das Protokoll zum vergangenen Treffen am 09.07.2026 nachlesen.]({{ site.url }}/meetups/2026-07-14-protokoll-35-meetup.html)
 
 Wer sind wir? Alle von uns, die das möchten, stellen sich im Bereich der
 [Podcaster:innen](/podcasterinnen) vor.
