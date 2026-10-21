@@ -26,9 +26,9 @@ Wenn du Einladungen für zukünftige Podcasterei-Meetups direkt per E-Mail bekom
 
 Wir veranstalten seit mittlerweile mehr als zehn Jahren gemeinsam Meetups, fahren auf Podcastingkonferenzen und haben auch schon eine Unkonferenz veranstaltet.
 
-**Das nächste Meetup findet am Donnerstag, 10. September um 18 Uhr als Picknick** statt, genauere Infos folgen.
+**Das nächste Meetup findet am Mittwoch, 25. November um 18 Uhr im Event-Raum im 3. Stock des Mediaquarter St. Marx statt** statt, genauere Infos folgen.
 
-[Hier kannst du das Protokoll zum vergangenen Treffen am 09.07.2026 nachlesen.]({{ site.url }}/meetups/2026-07-14-protokoll-35-meetup.html)
+[Hier kannst du das Protokoll zum vergangenen Treffen am 10.09.2026 nachlesen.]({{ site.url }}/meetups/2026-10-21-podcast-picknick36.html)
 
 Wer sind wir? Alle von uns, die das möchten, stellen sich im Bereich der
 [Podcaster:innen](/podcasterinnen) vor.
