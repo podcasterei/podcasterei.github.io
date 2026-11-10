@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Einladung zum 36. Podcasting Meetup"
+title:  "Einladung zum 37. Podcasting Meetup"
 date: 2026-11-10
 author: Jana Wiese
 categories: [Blog]
